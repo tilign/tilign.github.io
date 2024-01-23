@@ -1,18 +1,38 @@
-time: <span id="UTC_za00"></span> rise: <span id="New_York_z161"></span> set: <span id="Tokyo_z444"></span>
+<head>
+<style>
+body {
+    background-color: black;
+    font-size: 30px;
+    color: white; /* Added for better visibility of text on black background */
+}
+</style>
+</head>
+</head>
+<span id="New_York_Date"></span> <span id="New_York_Time"></span> rise: <span id="New_York_Sunrise"></span> set: <span id="New_York_Sunset"></span>
 <script src="//widget.time.is/en.js"></script>
 <script>
 time_is_widget.init({
-	UTC_za00 : {
-		coords: "40.71427,-74.00597"
-		   },
-	New_York_z161 : {
+	New_York_Time : {
+  	tempalte: "TIME",
+		coords: "40.71427,-74.00597",
+    id: "New_York_z161"
+	},
+	New_York_Date : {
+  	template: "DATE",
+    date_format: "dname mnum/daynum",
+		coords: "40.71427,-74.00597",
+    id: "New_York_z161"
+	},
+	New_York_Sunrise : {
 		template: "SUN",
 		sun_format: "srhour:srminute",
-		coords: "40.71427,-74.00597"
+		coords: "40.71427,-74.00597",
+    id: "New_York_z161"
 		},
-	Tokyo_z444 : {
+	New_York_Sunset : {
 		template: "SUN",
 		sun_format: "sshour:ssminute",
+    id: "New_York_z161",
 		coords: "40.71427,-74.00597"
 		}
 	});
